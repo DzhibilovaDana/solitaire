@@ -3,7 +3,7 @@ import pygame
 from math import sqrt
 
 check_img = pygame.image.load(os.path.join(
-    'C:/Users/dulus/OneDrive/Рабочий стол/курсач/pythonProject3/resources', 'check.png'))
+    'C:/Users/dulus/OneDrive/Рабочий стол/solitaire/pythonProject3/resources', 'check.png'))
 
 
 class Text:
@@ -14,7 +14,7 @@ class Text:
         self.text = text
         self.size = size
         self.color = color
-        name_of_font = os.path.join('C:/Users/dulus/OneDrive/Рабочий стол/курсач/pythonProject3/resources', 'fonts', font + '.ttf')
+        name_of_font = os.path.join('C:/Users/dulus/OneDrive/Рабочий стол/solitaire/pythonProject3/resources', 'fonts', font + '.ttf')
         self.font = pygame.font.Font(name_of_font, self.size)
         self.centered = centered
 

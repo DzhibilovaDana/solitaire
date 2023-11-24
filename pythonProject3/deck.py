@@ -28,7 +28,7 @@ class Deck:
         self.card_images = card_images
         self.card_size = card_size
 
-        name_of_image = os.path.join('C:/Users/dulus/OneDrive/Рабочий стол/курсач/pythonProject3/resources', 'card_back.png')
+        name_of_image = os.path.join('C:/Users/dulus/OneDrive/Рабочий стол/solitaire/pythonProject3/resources', 'card_back.png')
         self.card_back_image = pygame.image.load(name_of_image)
         self.card_back = self.resize_card_back()
 
@@ -43,7 +43,7 @@ class Deck:
         for suit in self.suits:
             for rank in self.ranks:
                 name_of_image = os.path.join(
-                    'C:/Users/dulus/OneDrive/Рабочий стол/курсач/pythonProject3/resources', 'cards', '{}_of_{}.png'.format(rank, suit))
+                    'C:/Users/dulus/OneDrive/Рабочий стол/solitaire/pythonProject3/resources', 'cards', '{}_of_{}.png'.format(rank, suit))
                 self.card_images[name_of_image] = pygame.image.load(name_of_image)
                 self.cards.append(Card(name_of_image, self.card_size, rank, suit))
         self.resize_card_images()
